@@ -9,6 +9,7 @@ Each exercise is a small, self-contained program, written by hand (no AI code ge
 | File | Domain | Description |
 | --- | --- | --- |
 | `delivery_route.py` | Logistics | Simulates a delivery route: tracks fuel consumption, refuses deliveries over 200 km, warns on low fuel and stops when fuel runs out. |
+| `shipment_label.py` | Logistics | Turns a messy shipment entry (code, city, weight) into a clean, formatted label. |
 
 ## How to run
 
