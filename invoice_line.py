@@ -1,11 +1,20 @@
+"""Read one invoice line and print its total price."""
+
+
 def main():
-    entry = input("Invoice line (item,quantity,unit_price): ")
-    parts = entry.split(",")
-    item = parts[0].strip().title()
-    quantity = int(parts[1].strip())
-    unit_price = float(parts[2].strip())
-    total_price = quantity * unit_price
-    print(f"{quantity} x {item}: {total_price} BHD")
+    entry = input("enter the invoice lien (item, quantity, unit_price) ? ")
+    entry = entry.split(",")
+    item = entry[0].strip().title()
+    quantity = int(entry[1].strip())
+    unit_price = float(entry[2].strip())
+    total = line_total(quantity, unit_price)
+    print(f"invoice line: {quantity} x {item}: {total} BHD")
+
+
+def line_total(quantity, unit_price):
+    """Return the total price for a quantity at a unit price."""
+    total = quantity * unit_price
+    return total
 
 
 main()
