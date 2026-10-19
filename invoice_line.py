@@ -2,13 +2,19 @@
 
 
 def main():
-    entry = input("enter the invoice lien (item, quantity, unit_price) ? ")
-    entry = entry.split(",")
-    item = entry[0].strip().title()
-    quantity = int(entry[1].strip())
-    unit_price = float(entry[2].strip())
+    entry = input("Invoice line (item,quantity,unit_price): ")
+    item, quantity, unit_price = parse_invoice_line(entry)
     total = line_total(quantity, unit_price)
-    print(f"invoice line: {quantity} x {item}: {total} BHD")
+    print(f"{quantity} x {item}: {total} BHD")
+
+
+def parse_invoice_line(entry):
+    """Return item, quantity and unit_price from an invoice line."""
+    parts = entry.split(",")
+    item = parts[0].strip().title()
+    quantity = int(parts[1].strip())
+    unit_price = float(parts[2].strip())
+    return item, quantity, unit_price
 
 
 def line_total(quantity, unit_price):
