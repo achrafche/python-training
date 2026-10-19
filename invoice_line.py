@@ -5,8 +5,7 @@ def main():
     entry = input("Invoice line (item,quantity,unit_price): ")
     item, quantity, unit_price = parse_invoice_line(entry)
     total = line_total(quantity, unit_price)
-    print(f"{quantity} x {item}: {total} BHD")
-
+    print(f"{quantity} x {item}: {total:,.3f} BHD")
 
 def parse_invoice_line(entry):
     """Return item, quantity and unit_price from an invoice line."""
