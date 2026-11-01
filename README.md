@@ -16,6 +16,7 @@ Each exercise is a small, self-contained program, written by hand (no AI code ge
 | `parcel_tag.py` | Logistics | Turns a parcel code typed by the user (`  bh-0457 `) into a clean tag (`#BH-0457`), built step by step from `main()` to the returned value. |
 | `box_volume.py` | Logistics | Computes the volume of a cube-shaped box from its side (`25` → `15625` cm³), converting the input with `int()` and using the `**` operator. |
 | `shipping_cost.py` | Logistics | Computes a parcel's shipping cost in Bahraini dinars from a weight in grams and a rate in fils, using two conversion functions called from `main()`. |
+| `swap_case.py` | Text | Swaps uppercase and lowercase letters (`Hello` → `hELLO`) with a loop over each character and an `if` / `elif` / `else`. |
 
 ## How to run
 
